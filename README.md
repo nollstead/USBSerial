@@ -23,7 +23,7 @@ Both push-pull and open source driven DTR are supported, so this can be used a w
 
 ## USB Breakout
 
-The raw USB VBUS signal and D+/D- differential pairs are broken out as well as a cleaned up 5v signal filtered through an LC network.  The board contains the necessary 5.1kΩ resistors on the USB CC1 and CC2 pins so no need to expose them or add those resistors to your breadboard.
+The raw USB VBUS signal and D+/D- differential pairs are broken out as well as a cleaned up 5v signal filtered through an LC network.  The board contains the necessary 5.1kΩ resistors on the USB CC1 and CC2 pins to allow it to source power, so no need to expose them or add those resistors to your breadboard.
 
 ## Voltage Regulation
 
@@ -38,7 +38,7 @@ To support as many target MCUs as possible, the DTR# pin can operate in one of t
 
 - TNOW (default):  The DTR# pin functions as a transmit-now (TNOW) signal, typically used for half-duplex transceiver switching.  This mode is useful when working with RS485 communication, where the device needs to switch between transmitting and receiving data
 - Push-Pull driven DTR:  Push-pull mode is activated by placing a 4.7KΩ resistor across the DTR# and CTS# (or solding a 1206 4.7KΩ on the back).  Push-Pull mode is useful when interfacing with microcontrollers that require a strong signal to control boot mode or reset signals - such as an ATMega328P or STM32F4
-- Open Source Driven DTR:  Ppen source mode is activated by placing adding a pull-down 4.7KΩ to the DTR# pin.  In this configuration, the DTR# pin behaves as an open-drain output, meaning it can pull low but requires an external pull-up resistor to drive high. 
+- Open Source Driven DTR:  Open source mode is activated by placing a 4.7KΩbpull-down  resistor on the DTR# pin.  In this configuration, the DTR# pin behaves as an open-drain output, meaning it can pull low but requires an external pull-up resistor to drive high. 
 
 ## Pinout
 
