@@ -1,0 +1,20 @@
+# Hello STM32
+
+In this example we're leaving the ATMega328 world behind and moving to the STM32 microcontroller.  STM32 microcontrollers are considerably more powerful and more customizable than ATMega32p's, though that comes at the cost of a bit more complexity.  Fortunately, to get started and leverage most of the functionality of these boards we can still use our familiar Arduino IDE.  H
+
+To follow along you'll need the following components
+- A USB Buddy
+- An [STM32F103C8 "Blue Pill" module](https://www.amazon.com/dp/B07VKSVM21?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1)
+
+
+
+To be continued...
+
+<!--
+
+https://www.youtube.com/watch?v=L670v-Oghs4
+
+- To use the onboard USB with the Arduino IDE you need a bootloader
+
+-->
+
