@@ -14,7 +14,7 @@ For this example you'll need the following components
 
 1. Add the adapter and the ATMega328P module to the breadboard
 2. Select the 3V3 option on the adapter by jumping the middle and bottom pins together.  Note, it's important to complete this step prior to proceeding to ensure the correct voltage is sent to the target once connected.
-3. Connect the VCC pin on the adapter to the VCC pin on the target module
+3. Connect the VCC pin on the adapter to the VCC pin on the target module.  Note that many Arduino Pro Mini clones have a misprint on the silkscreen where VCC is mistakenly labeled as ACC.  If that's the case then go ahead and connect to that pin on the target module.
 4. Connect the GND pin on the adapter to any GND pin on the target module
 5. Connect the TXO pin on the adapter to the RXI pin on the target module
 6. Connect the RXI pin on the adapter to the TXO pin on the target module

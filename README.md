@@ -1,4 +1,4 @@
-# USB-to-Serial Adapter
+# USB Buddy
 
 ![USB2SerialAdapter](/images/U2SFront.png)
 
